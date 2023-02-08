@@ -16,7 +16,7 @@ def run_chat():
     running_flag = True
     while running_flag:
         try:
-            prompt = input("Type here:")
+            prompt = input("Type here:  ")
 
             # Generate a response
             completion = openai.Completion.create(
