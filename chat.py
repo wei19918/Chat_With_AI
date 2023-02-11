@@ -1,5 +1,10 @@
-from dotenv import load_dotenv
 import os
+import sys
+
+# Make sure modify it so that Python runs the script with correct venv. (Wish there is a better way to hide it..)
+sys.path.insert(0, r'C:\Users\wei19\OneDrive\01_CS_Python_Scripts_Backup\ChatWithAi\venv\Lib\site-packages')
+
+from dotenv import load_dotenv
 import openai
 
 # Take environment variables from .env.
