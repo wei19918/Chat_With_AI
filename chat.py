@@ -1,7 +1,8 @@
 import os
 import sys
 
-# Make sure modify it so that Python runs the script with correct venv. (Wish there is a better way to hide it..)
+# If you'd like to run from shurt-cut or .bat, make sure to modify it so that Python runs the script with correct venv.
+# Ignore this if you are running in interpreter such as PyCharm, simply set it in config.
 sys.path.insert(0, r'C:\Users\wei19\OneDrive\01_CS_Python_Scripts_Backup\ChatWithAi\venv\Lib\site-packages')
 
 from dotenv import load_dotenv
@@ -30,7 +31,7 @@ def run_chat():
                 max_tokens=1024,
                 n=1,
                 stop=None,
-                temperature=0.5,
+                temperature=0.5,  # randomness 0~2
             )
             response = completion.choices[0].text
             print(f"OpenAI: {response}\n\n")
